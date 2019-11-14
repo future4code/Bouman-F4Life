@@ -17,8 +17,8 @@ header{
     top: 0;
 }
 header img{
-    width: 150px;
-    height: 75px;
+    width: 240px;
+    height: 90px;
     display: block;
 }
 nav{
@@ -35,6 +35,8 @@ a{
     background-color: #3c495f;
     padding: 100px 0 20px 0;
     text-align: center;
+    color: #6cd8d1;
+    font-size: xx-large;
  }
 /* Section */
 
@@ -135,7 +137,7 @@ footer {
 
     }
 
-    @media screen and (max-width: 667px){
+    @media screen and (max-width: 668px) and (min-width: 421px){
         h2{
             padding: 50px 7px 20px ;
         }
