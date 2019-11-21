@@ -1,0 +1,154 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+/* Header */
+
+header{
+    background-color: rgb(19, 34, 53);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 240px;
+    height: 90px;
+    display: block;
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ h2{
+    background-color: #3c495f;
+    padding: 100px 0 20px 0;
+    text-align: center;
+    color: #6cd8d1;
+    font-size: xx-large;
+ }
+/* Section */
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #3c495f;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 100px 20px 100px;
+}
+section div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #6cd8d1;
+    border-radius: 15px;
+    max-width: 400px;
+    height: 15vh;
+    width: 15vw;
+    padding: 15px;
+    background-color: #2d395d
+    ;
+}
+
+
+/* Footer */
+
+footer {
+    background: #00000F;
+    height: 235px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.faceLogo {
+    margin-top: 30px;
+    margin-left: 13px;
+    width: 30px;
+    height: 30px;
+}
+.faceLogo:hover{
+    opacity: 50%;
+}
+.instaLogo {
+    margin-top: 30px;
+    margin-left: 13px;
+    width: 30px;
+    height: 30px;
+}
+.instaLogo:hover{
+    opacity: 50%;
+}
+.twitterLogo {
+    margin-top: 30px;
+    margin-left: 13px;
+    width: 30px;
+    height: 30px;
+}
+.twitterLogo:hover{
+    opacity: 50%;
+}
+.copyRight {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+
+    @media screen and (max-width: 420px ){
+        
+
+        h2{
+            padding: 50px 7px 20px ;
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 50px 20px 50px
+        }
+    
+        section div{
+            width: 70vw;
+        }
+
+        .copyRight{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            text-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: 668px) and (min-width: 421px){
+        h2{
+            padding: 50px 7px 20px ;
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px 20px 50px
+        }
+
+        section div{
+            width: 30vw;
+        }
+    }
